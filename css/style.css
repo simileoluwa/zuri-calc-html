@@ -1,0 +1,154 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+#container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.repo {
+  width: 100%;
+  padding: 12px 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#calculator {
+  width: 35%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  /* background-color: #81c784; */
+}
+
+table {
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+  width: 100%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+td {
+  width: 25%;
+}
+
+#display {
+  padding: 12px 25px;
+  width: 100%;
+  font-size: 3rem;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: end;
+  /* word-wrap: break-word;
+  word-break: break-all; */
+  font-weight: bold;
+  color: #3a3a3a;
+  background-color: hsl(218, 21%, 84%);
+  border: none;
+  /* text-combine-upright: all; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* #keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 40px;
+  margin: 0;
+} */
+
+button {
+  width: 100px;
+  height: 80px;
+  border-radius: 8px;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(0, 1%, 20%);
+  cursor: pointer;
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: #f2f2f2;
+  margin: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+button:active {
+  background-color: hsl(105, 5%, 83%);
+}
+
+.operator-button {
+  background-color: hsl(100, 2%, 18%);
+}
+
+.operator-button:active {
+  background-color: hsl(90, 4%, 25%);
+}
+
+.operator-button-equal {
+  /* background-color: #81c784; */
+  background-color: hsl(30, 93%, 58%);
+}
+
+.operator-button-equal:active {
+  background-color: hsl(37, 95%, 59%);
+}
+
+.operator-button-backspace {
+  background-color: #f50258;
+  color: #f2f2f2;
+}
+.operator-button-backspace:active {
+  background-color: hsl(9, 100%, 60%);
+}
